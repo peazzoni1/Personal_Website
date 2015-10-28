@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,800,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <title>Aaron Peazzoni</title>
+</head>
+
+<body id="body">
+     <div id="home">
+      <div>
+      <video preload loop muted autoplay poster="img/videoframe.jpg" id="background-vid">
+        <source src="https://dl.dropboxusercontent.com/u/28198338/grasinfrontofblack_2.mov" type="video/mp4">
+      </video>
+    </div>
+      <header>
+        <nav class="navbar">
+         <div id="links">
+      <button id="twitter" type="button" onclick="window.open(location.href='https://twitter.com/AaronPeazzoni')" class="btn btn-primary btn-md"><i class="fa fa-twitter fa-2x"></i></button>
+      <button id="linkedin" type="button" onclick="window.open(location.href='https://www.linkedin.com/pub/aaron-peazzoni/6/672/543')" class="btn btn-primary btn-md"><i class="fa fa-linkedin fa-2x"></i></button>
+      <button id="github" type="button" onclick="window.open(location.href='https://github.com/peazzoni1')" class="btn btn-primary btn-md"><i class="fa fa-github fa-2x"></i></button>
+       </div> 
+            
+        <a id="#name">Aaron Peazzoni</a>
+    <ul id="MyNavbar" class="nav navbar-nav">
+        <li><a href="#home" type="button" class="btn btn-lg buttons">Home</a></li>
+            <li><a href="#about-section" type="button" class="btn btn-lg buttons">About</a></li>
+            <li><a href="#portfolio-section" class="btn btn-lg buttons">Portfolio</a></li>
+        <li><a href="#contact-section" type="button" class="btn btn-lg buttons" href="#contact-section">Contact</a></li>
+            
+        </ul>
+        </div>
+        </nav>  
+          
+    </header>
+    
+    <div id=title> 
+        <p>Mean Stack Web Developer<br>
+            <span style="color:#d5f3fa; font-size: 50px">Javascript <span style="color:#05d5e6; font-size: 50px">|</span> Angular.js <span style="color:#05d5e6; font-size: 50px">|</span> Node.js <span style="color:#05d5e6; font-size: 50px">|</span> MongoDB</span></p>
+        <h2>jQuery <span style="color:#d8fcff; font-size: 24px">|</span> HTML  <span style="color:#d8fcff; font-size: 24px">|</span> CSS  <span style="color:#d8fcff; font-size: 24px">|</span>  Bootstrap  <span style="color:#d8fcff; font-size: 24px">|</span>  Git</h2>
+        
+    </div>
+   
+    <div id="about-section">
+       
+        <div id="bio"> 
+    <p>Hi, I'm Aaron. I made (still making) the jump to coding <br> as a mostly self-taught Front-End developer.<br> My prior career background was in social entrepreneurship <br> where I worked as an Operations Leader. (Check out <br>my <a href="Aaron%20Peazzoni%20Resume%204-15.pdf">resume</a> for all the gory details)</p>
+    </div>
+      </div>    
+    
+
+  <div id="portfolio-section">
+    <div id="appPageTitle">
+      <h1>Simple Apps</h1>
+    </div>
+  <div class="row>">
+          <div class="col-lg-4" id="weatherApp">
+          <a href="http://codepen.io/peazzoni1/pen/epYjbw?editors=010"><img src="local_weather_pic.png"></a>
+          <p class="app-desc">Basic weather app using OpenWeatherMap API. Displays current weather, condition icon and location. Background also changes depending on whether it's day or night.</p>
+        </div>
+      
+        <div class="col-lg-4" id="calcApp">
+          <a  href="http://codepen.io/peazzoni1/pen/JYJmZr"><img src="calc_pic.png"></a>
+        <p class="app-desc">Calculator designed using Angular. Performs basic arithmetic functions on two numbers up to ten digits.</p>
+        </div>
+       <div class="col-lg-4">
+      <a  href="http://codepen.io/peazzoni1/pen/VvvRgo"><img src="twitch_pic.png"></a>
+      <p class="app-desc">Web app built in Angular with Twitch API that allows user to create custom list of favorite Twitch channels. List displays User logo, name, channel description and online status.</p>
+      </div>
+      </div>
+  </div>
+    
+  <footer>
+    <div id="contact-section">
+      <div id="info">
+        <p>Contact: peazzoni@gmail.com | Philadelphia Area |</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+$("#MyNavbar a").on('click', function(event){
+  event.preventDefault();
+  var hash = this.hash;
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){
+    window.location.hash = hash;
+  });
+});
+  </script>
+</body>
+
+</html>
+    
+    
+    
+      
