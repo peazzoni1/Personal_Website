@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="normalize.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,800,400' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,600,800,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans: 400, 600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="responsive.css">
- <link rel="icon" href="favicon.ico" type="image/png" sizes="32x32">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="favicon.ico" type="image/png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script src="app.js"></script>
 
-  <title>Aaron Peazzoni</title>
+    <title>Aaron Peazzoni</title>
 </head>
-
 <body id="body">
+        
      <div id="home">
       <div>
       <video preload loop muted autoplay poster="img/videoframe.jpg" id="background-vid">
-        <source src="https://dl.dropboxusercontent.com/u/28198338/grasinfrontofblack_2.mov" type="video/mp4">
+        <source src="quickcast-05-01-2016-10-25-59.mp4" type="video/mp4">
       </video>
     </div>
       <header>
@@ -50,91 +50,89 @@
             <span style="color:#d5f3fa; font-size: 50px">Javascript <span style="color:#05d5e6; font-size: 50px">|</span> Angular.js <span style="color:#05d5e6; font-size: 50px">|</span> jQuery <span style="color:#05d5e6; font-size: 50px">|</span> Bootstrap</span></p>
         <h2>Node.js <span style="color:#d8fcff; font-size: 24px">|</span> CSS  <span style="color:#d8fcff; font-size: 24px">|</span>  HTML  <span style="color:#d8fcff; font-size: 24px">|</span>  Git</h2>     
     </div>
+    <div id="portfolio-section">
+        <div class="grid">
+        <div class="grid-sizer"></div>
+            <div class="grid-item" id="grid-item-title">Portfolio</div>
+            <div class="grid-item" id="weatherApp">
+                <a target="_blank" href="http://peazzoni1.github.io/angularWeatherApp/#/"><img class="image" src="local_weather_pic.png" </a>
+                <p class="app-title">Angular Weather App</p>
+                <p class="app-desc">Angular designed app using OpenWeatherMap API. Displays current weather, condition icon and location. User can search forecast based on location. Background also changes depending on whether it's day or night.</p>
+            </div>
+           
+            <div class="grid-item" id="calcApp">
+                <a target="_blank" href="http://codepen.io/peazzoni1/pen/JYJmZr"><img src="calc_pic.png"></a>
+                <p class="app-title">Angular Calculator</p>
+                <p class="app-desc">Calculator designed using Angular. Performs basic arithmetic functions on two numbers up to ten digits.</p>
+            </div>
+
+            <div class="grid-item" id="twitchApp">
+                <a target="_blank" href="http://codepen.io/peazzoni1/pen/VvvRgo"><img src="new_twitch_shot.png"></a>
+                <p class="app-title">Angular Twitch API App</p>
+                <p class="app-desc">Angular designed app with Twitch API that allows user to create custom list of favorite Twitch channels. List displays User logo, name, channel description and online status.</p>
+            </div> 
+            
+            <div class="grid-item">
+                <a target="_blank" href="https://github.com/peazzoni1/mytodo"><img class="image" src="todo_pic.png"></a>
+                <p class="app-title">Yeoman Clone</p>
+                <p class="app-desc">Yeoman-Angular To Do List app.</p>
+            </div>
+            
+            <div class="grid-item">
+                <a target="_blank" href="http://peazzoni1.github.io/StockApp-"><img class="image" src="stockApp_pic.png"></a>
+                <p class="app-title">Angular Mongo<br>Highcharts.JS </p>
+                <p class="app-desc">Highcharts.js app using Angular and Quandl API. Data pushes to MongoDB collection. Users can add / remove stock symbols.</p>
+            </div>
+    
+            <div class="grid-item">
+                <a target="_blank" href="http://codepen.io/peazzoni1/pen/yYyGew"><img class="image" src="tomato_timer_pic.png"></a>
+                <p class="app-title">Pomodoro Clock <br> (Sort Of)</p>
+                <p class="app-desc">Simple twist on the classic tomato timer for work. Now for kids...set timers for different activities.</p>
+            </div>
+            </div>
+        </div>
+    
     <div id="about-section">
         <h1 class="PageTitle">Hi, I'm Aaron</h1>
-    <div>
-   <p id="resumeBlurb"><span style="font-family:Josefin Sans; font-weight:600">My career background is primarily in social entrepreneurship where I <br> worked as a Team Lead in operations and a partner in two start-ups. <br>Check out my <a href="Resume_11_2015.pdf">resume</a> for more details.<br><span style="color: green">Get in touch</span>: peazzoni@yahoo.com | Philadelphia Area</span></p>
-        <p id="introBlurb"><span style="font-family:Josefin Sans; font-weight:600">I made the jump to coding as a mostly self-taught Front-End developer. <br>I've worked mainly with technologies on the MEAN stack, but I also have <br>a soft spot for Python. Some samples of my projects are below, and feel <br>free to look at my <a href="https://github.com/peazzoni1">Github</a> or <a href="http://codepen.io/peazzoni1/">Codepen</a> page to see what's under the hood.</span></p> 
- </div>
- 
-<div id="table-one" class="bookshelf">
-<table >
-    <h1 id="books">Books I'm Reading</h1>
-    <tbody>
-        <tr>
-            <td style="width:100px"><img alt="Eloquent JavaScript: A Modern Introduction to Programming" class="book" src="http://ecx.images-amazon.com/images/I/51pLAgSXOzL._SL75_.jpg"></td>
-    <td style="width:100px"><img alt="Functional JavaScript: Introducing Functional Programming with Underscore.js" class="book" src="http://ecx.images-amazon.com/images/I/51Pc6VPaBAL._SL75_.jpg"></td>
-    <td style="width:100px"><img alt="MEAN Web Development" class="book" src="http://ecx.images-amazon.com/images/I/51C7ByxNtNL._SL75_.jpg"></td>
-    </tr>
-        </tbody> 
-    </table> 
-    </div> 
-   <div id="table-two" class="bookshelf">
-    <table>
-    <h1 id="books">Blogs and Sites I like</h1>
-    <tbody>
-        <tr>
-            <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Nodeschool.io</span></td>
-        </tr>
-        <tr>
-            <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">You don't know JS</span></td>
-        </tr>
-        <tr>
-            <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Mostly Adequate Guide to FP</span></td>
-       </tr>
-        <tr>
-            <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Conquering the Command Line</span></td>
-       </tr>
-        </tbody> 
-    </table> 
-</div>
-    </div>
-  <div id="portfolio-section">
-    <div class="PageTitle">
-      <h1>Simple Apps</h1>
-    </div>
-    <div>
-    <table align="center"> 
-     <tbody> 
-      <tr>
-       <td class="appTable"><div class="col-md-4" id="weatherApp">
-          <a target="_blank" href="http://codepen.io/peazzoni1/pen/epYjbw?editors=010"><img src="local_weather_pic.png"></a>
-          <p class="app-desc">Basic weather app using OpenWeatherMap API. Displays current weather, condition icon and location. Background also changes depending on whether it's day or night.</p>
+        <div>
+            <p id="resumeBlurb"><span style="font-family:Josefin Sans; font-weight:600">My career background is primarily in social entrepreneurship where I <br> worked as a Team Lead in operations and a partner in two start-ups. <br>Check out my <a href="Resume_11_2015.pdf">resume</a> for more details.<br><span style="color: green">Get in touch</span>: peazzoni@yahoo.com | Philadelphia Area</span>
+            </p>
+            <p id="introBlurb"><span style="font-family:Josefin Sans; font-weight:600">I made the jump to coding as a mostly self-taught Front-End developer. <br>I've worked mainly with technologies on the MEAN stack, but I also have <br>a soft spot for Python. Some samples of my projects are below, and feel <br>free to look at my <a href="https://github.com/peazzoni1">Github</a> or <a href="http://codepen.io/peazzoni1/">Codepen</a> page to see what's under the hood.</span></p>
         </div>
-          </td>
-        <td class="appTable"><div class="col-md-4" id="calcApp">
-          <a target="_blank" href="http://codepen.io/peazzoni1/pen/JYJmZr"><img src="calc_pic.png"></a>
-        <p class="app-desc">Calculator designed using Angular. Performs basic arithmetic functions on two numbers up to ten digits.</p>
-        </div>
-          </td>
-       <td class="appTable"><div class="col-md-4" id="twitchApp">
-      <a target="_blank" href="http://codepen.io/peazzoni1/pen/VvvRgo"><img src="new_twitch_shot.png"></a>
-      <p class="app-desc">Web app built in Angular with Twitch API that allows user to create custom list of favorite Twitch channels. List displays User logo, name, channel description and online status.</p>
-      </div>
-          </td>
-         </tr>
-        </tbody>
-        </table>
-      </div>
-  </div>
-    
-  
 
-  <script>
-$("#MyNavbar a").on('click', function(event){
-  event.preventDefault();
-  var hash = this.hash;
-  $('html, body').animate({
-    scrollTop: $(hash).offset().top
-  }, 800, function(){
-    window.location.hash = hash;
-  });
-});
-  </script>
+        <div id="table-one" class="bookshelf">
+            <table>
+                <h1 id="books">Books I'm Reading</h1>
+                <tbody>
+                    <tr>
+                        <td style="width:100px"><img alt="Eloquent JavaScript: A Modern Introduction to Programming" class="book" src="http://ecx.images-amazon.com/images/I/51pLAgSXOzL._SL75_.jpg"></td>
+                        <td style="width:100px"><img alt="Functional JavaScript: Introducing Functional Programming with Underscore.js" class="book" src="http://ecx.images-amazon.com/images/I/51Pc6VPaBAL._SL75_.jpg"></td>
+                        <td style="width:100px"><img alt="MEAN Web Development" class="book" src="http://ecx.images-amazon.com/images/I/51C7ByxNtNL._SL75_.jpg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-two" class="bookshelf">
+            <table>
+                <h1 id="books">Blogs and Sites I like</h1>
+                <tbody>
+                    <tr>
+                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Nodeschool.io</span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">You don't know JS</span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Mostly Adequate Guide to FP</span></td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Conquering the Command Line</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 
 </body>
 
 </html>
-    
-    
-    
-      
