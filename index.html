@@ -12,128 +12,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
     <script src="app.js"></script>
-
     <title>Aaron Peazzoni</title>
 </head>
 <body id="body">
+    <div id="home">
+        <div>
+            <video preload loop muted autoplay poster="img/videoframe.jpg" id="background-vid">
+                <source src="quickcast-05-01-2016-10-25-59.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header>
+            <nav class="navbar">
+                <div id="links">
+                    <button id="twitter" type="button" onclick="window.open(location.href='https://twitter.com/AaronPeazzoni')" class="btn btn-primary btn-md"><i class="fa fa-twitter fa-2x"></i></button>
+                    <button id="linkedin" type="button" onclick="window.open(location.href='https://www.linkedin.com/pub/aaron-peazzoni/6/672/543')" class="btn btn-primary btn-md"><i class="fa fa-linkedin fa-2x"></i></button>
+                    <button id="github" type="button" onclick="window.open(location.href='https://github.com/peazzoni1')" class="btn btn-primary btn-md"><i class="fa fa-github fa-2x"></i></button>
+                </div>
 
-     <div id="home">
-      <div>
-      <video preload loop muted autoplay poster="img/videoframe.jpg" id="background-vid">
-        <source src="quickcast-05-01-2016-10-25-59.mp4" type="video/mp4">
-      </video>
+                <a id="#name">Aaron Peazzoni</a>
+                <ul id="MyNavbar" class="nav navbar-nav">
+                    <li><a href="#home" type="button" class="btn btn-lg buttons">Home</a></li>
+                    <li><a href="#about-section" type="button" class="btn btn-lg buttons">About</a></li>
+                    <li><a href="#portfolio" class="btn btn-lg buttons">Portfolio</a></li>
+                </ul>
     </div>
-      <header>
-        <nav class="navbar">
-         <div id="links">
-      <button id="twitter" type="button" onclick="window.open(location.href='https://twitter.com/AaronPeazzoni')" class="btn btn-primary btn-md"><i class="fa fa-twitter fa-2x"></i></button>
-      <button id="linkedin" type="button" onclick="window.open(location.href='https://www.linkedin.com/pub/aaron-peazzoni/6/672/543')" class="btn btn-primary btn-md"><i class="fa fa-linkedin fa-2x"></i></button>
-      <button id="github" type="button" onclick="window.open(location.href='https://github.com/peazzoni1')" class="btn btn-primary btn-md"><i class="fa fa-github fa-2x"></i></button>
-       </div>
-
-        <a id="#name">Aaron Peazzoni</a>
-    <ul id="MyNavbar" class="nav navbar-nav">
-        <li><a href="#home" type="button" class="btn btn-lg buttons">Home</a></li>
-            <li><a href="#about-section" type="button" class="btn btn-lg buttons">About</a></li>
-            <li><a href="#portfolio-section" class="btn btn-lg buttons">Portfolio</a></li>
-        <li><a href="#contact-section" type="button" class="btn btn-lg buttons" href="#contact-section">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-</header>
-
+    </nav>
+    </header>
     <div id=title>
-        <p>Front-End Web Developer<br>
-            <span style="color:#d5f3fa; font-size: 50px">Javascript <span style="color:#05d5e6; font-size: 50px">|</span> Angular.js <span style="color:#05d5e6; font-size: 50px">|</span> jQuery <span style="color:#05d5e6; font-size: 50px">|</span> Bootstrap</span></p>
+        <p>Front-End Web Developer
+            <br>
+            <span style="color:#d5f3fa; font-size: 50px">Javascript <span style="color:#05d5e6; font-size: 50px">|</span> Angular.js <span style="color:#05d5e6; font-size: 50px">|</span> jQuery <span style="color:#05d5e6; font-size: 50px">|</span> Bootstrap</span>
+        </p>
         <h2>Node.js <span style="color:#d8fcff; font-size: 24px">|</span> CSS  <span style="color:#d8fcff; font-size: 24px">|</span>  HTML  <span style="color:#d8fcff; font-size: 24px">|</span>  Git</h2>
     </div>
-    <div id="portfolio-section">
+    <div id="portfolio"></div>
+    <div class="portfolio-sections">
         <div class="grid">
-        <div class="grid-sizer"></div>
+            <div class="grid-sizer"></div>
             <div class="grid-item" id="grid-item-title">Portfolio</div>
-            <div class="grid-item" id="weatherApp">
-                <a target="_blank" href="http://peazzoni1.github.io/angularWeatherApp/#/"><img class="image" src="img/local_weather_pic.png" </a>
-                <p class="app-title">Angular Weather App</p>
-                <p class="app-desc">Angular designed app using OpenWeatherMap API. Displays current weather, condition icon and location. User can search forecast based on location. Background also changes depending on whether it's day or night.</p>
-            </div>
-
-            <div class="grid-item" id="calcApp">
-                <a target="_blank" href="http://codepen.io/peazzoni1/pen/JYJmZr"><img src="img/calc_pic.png"></a>
-                <p class="app-title">Angular Calculator</p>
-                <p class="app-desc">Calculator designed using Angular. Performs basic arithmetic functions on two numbers up to ten digits.</p>
-            </div>
-
-            <div class="grid-item" id="twitchApp">
-                <a target="_blank" href="http://codepen.io/peazzoni1/pen/VvvRgo"><img src="img/new_twitch_shot.png"></a>
-                <p class="app-title">Angular Twitch API App</p>
-                <p class="app-desc">Angular designed app with Twitch API that allows user to create custom list of favorite Twitch channels. List displays User logo, name, channel description and online status.</p>
-            </div>
-
             <div class="grid-item">
-                <a target="_blank" href="https://github.com/peazzoni1/mytodo"><img class="image" src="img/todo_pic.png"></a>
-                <p class="app-title">Yeoman Clone</p>
-                <p class="app-desc">Yeoman-Angular To Do List app.</p>
+                <a target="_blank" href="https://still-basin-9076.herokuapp.com"><img class="image" src="img/socket-chatApp-pic.png"></a>
+                <p class="app-tag">Node.js</p>
+                <p class="app-title">Socket.io Chat App</p>
+                <p class="app-desc">Chat app using socket.io and Express. User can create a screen name and send messages to other users. Deployed on Heroku.</p>
             </div>
-
             <div class="grid-item">
                 <a target="_blank" href="http://peazzoni1.github.io/StockApp-"><img class="image" src="img/stockApp_pic.png"></a>
-                <p class="app-title">Angular Mongo<br>Highcharts.JS </p>
+                <p class="app-tag">Node.js</p>
+                <p class="app-title">Highcharts.js App</p>
+             
                 <p class="app-desc">Highcharts.js app using Angular and Quandl API. Data pushes to MongoDB collection. Users can add / remove stock symbols.</p>
             </div>
-
+            <div class="grid-item" id="grid-item-title"></div>
+            <div class="grid-item" id="weatherApp">
+                <a target="_blank" href="http://peazzoni1.github.io/angularWeatherApp/#/"><img class="image" src="img/local_weather_pic.png" </a>
+                    <p class="app-tag">Angular.js</p>
+                    <p class="app-title">SPA Weather App</p>
+                    <p class="app-desc">Angular designed app using OpenWeatherMap API. Displays current weather, condition icon and location. User can search forecast based on location. Background also changes depending on whether it's day or night.</p>
+            </div>
+            <div class="grid-item" id="calcApp">
+                <a target="_blank" href="http://codepen.io/peazzoni1/pen/JYJmZr"><img src="img/calc_pic.png"></a>
+                <p class="app-tag">Angular.js</p>
+                <p class="app-title">Calculator</p>
+                <p class="app-desc">Calculator designed using Angular. Performs basic arithmetic functions on two numbers up to ten digits.</p>
+            </div>
+            <div class="grid-item" id="twitchApp">
+                <a target="_blank" href="http://codepen.io/peazzoni1/pen/VvvRgo"><img src="img/new_twitch_shot.png"></a>
+                <p class="app-tag">Angular.js</p>
+                <p class="app-title">Twitch API App</p>
+                <p class="app-desc">Angular designed app with Twitch API that allows user to create custom list of favorite Twitch channels. List displays User logo, name, channel description and online status.</p>
+            </div>
+            <div class="grid-item">
+                <a target="_blank" href="https://github.com/peazzoni1/mytodo"><img class="image" src="img/todo_pic.png"></a>
+                <p class="app-tag">Angular.js</p>
+                <p class="app-title">Yeoman To Do Clone</p>
+                <p class="app-desc">Yeoman-Angular To Do List app.</p>
+            </div>
+            
             <div class="grid-item">
                 <a target="_blank" href="http://codepen.io/peazzoni1/pen/yYyGew"><img class="image" src="img/tomato_timer_pic.png"></a>
-                <p class="app-title">Pomodoro Clock <br> (Sort Of)</p>
+                <p class="app-tag">jQuery</p>
+                <p class="app-title">Pomodoro Timer</p>
                 <p class="app-desc">Simple twist on the classic tomato timer for work. Now for kids...set timers for different activities.</p>
             </div>
-            <div class="grid-item" id="grid-item-title">Angular projects</div>
+            
+            <div class="grid-item">
+                <a target="_blank" href="https://github.com/peazzoni1/Personal_Website"><img class="image" src="img/website-pic.png"></a>
+                <p class="app-tag">jQuery</p>
+                <p class="app-title">Website</p>
+                <p class="app-desc">This website was made with jQuery, Bootstrap and Masonry.js (and love).</p>
             </div>
-        </div>
-
-    <div id="about-section">
-        <h1 class="PageTitle">Hi, I'm Aaron</h1>
-        <div>
-            <p id="resumeBlurb"><span style="font-family:Josefin Sans; font-weight:600">My career background is primarily in social entrepreneurship where I <br> worked as a Team Lead in operations and a partner in two start-ups. <br>Check out my <a href="Resume_11_2015.pdf">resume</a> for more details.<br><span style="color: green">Get in touch</span>: peazzoni@yahoo.com | Philadelphia Area</span>
-            </p>
-            <p id="introBlurb"><span style="font-family:Josefin Sans; font-weight:600">I made the jump to coding as a mostly self-taught Front-End developer. <br>I've worked mainly with technologies on the MEAN stack, but I also have <br>a soft spot for Python. Some samples of my projects are below, and feel <br>free to look at my <a href="https://github.com/peazzoni1">Github</a> or <a href="http://codepen.io/peazzoni1/">Codepen</a> page to see what's under the hood.</span></p>
-        </div>
-
-        <div id="table-one" class="bookshelf">
-            <table>
-                <h1 id="books">Books I'm Reading</h1>
-                <tbody>
-                    <tr>
-                        <td style="width:100px"><img alt="Eloquent JavaScript: A Modern Introduction to Programming" class="book" src="http://ecx.images-amazon.com/images/I/51pLAgSXOzL._SL75_.jpg"></td>
-                        <td style="width:100px"><img alt="Functional JavaScript: Introducing Functional Programming with Underscore.js" class="book" src="http://ecx.images-amazon.com/images/I/51Pc6VPaBAL._SL75_.jpg"></td>
-                        <td style="width:100px"><img alt="MEAN Web Development" class="book" src="http://ecx.images-amazon.com/images/I/51C7ByxNtNL._SL75_.jpg"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="table-two" class="bookshelf">
-            <table>
-                <h1 id="books">Blogs and Sites I like</h1>
-                <tbody>
-                    <tr>
-                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Nodeschool.io</span></td>
-                    </tr>
-                    <tr>
-                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">You don't know JS</span></td>
-                    </tr>
-                    <tr>
-                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Mostly Adequate Guide to FP</span></td>
-                    </tr>
-                    <tr>
-                        <td><span style="font-family:Josefin Sans; font-weight:600; font-size: 24px">Conquering the Command Line</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="grid-item" id="grid-item-title"></div>
+            <div class="grid-item" id="grid-item-title"></div>
         </div>
     </div>
-</div>
-</body>
 
+    <div id="about-section">
+        <h1 id="PageTitle">Hi, I'm Aaron</h1>
+        <div>
+            <p id="introBlurb"><span style="font-family:Josefin Sans; font-weight:600">My career background is primarily in social entrepreneurship and Business Operations. I made the jump to coding as a mostly self-taught Front-End developer and work mainly with the MEAN stack.</p>
+            <p id="contact-details"><span style="font-family:Josefin Sans; font-weight:600">Check out at my <a href="https://github.com/peazzoni1">Github</a> page to see what's under the hood.</span><br>Here's my <a href="Resume_11_2015.pdf">resume</a> for more details.<br><span style="color: green">Get in touch</span>: peazzoni@yahoo.com | Philadelphia Area</span>
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
 </html>
